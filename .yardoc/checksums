@@ -1,2 +1,3 @@
 lib/calorie_counter.rb a173fe8a2754686ce8c77cb8d870e4f73cf6da9e
+lib/rucksack_scorer.rb bd385b0177e2df0d98e82f83f4c58b1ffb630517
 lib/tournament_tally.rb 18e6dc29569d84e90c4d418005f8519877b3a4d4
