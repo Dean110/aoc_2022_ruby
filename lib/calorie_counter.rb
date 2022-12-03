@@ -9,7 +9,7 @@ class CalorieCounter
   # @return [String] the input from the day one puzzle.
   attr_reader :input
 
-  # @param input [String] the day one problem input
+  # @param input [String] the day one problem input.
   def initialize(input)
     @input = input
   end
