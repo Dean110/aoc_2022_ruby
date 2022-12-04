@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  Class: CalorieCounter
+  Class: TournamentTally
   
     &mdash; Documentation by YARD 0.9.28
   
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/common.css" type="text/css" />
 
 <script type="text/javascript">
-  pathId = "CalorieCounter";
+  pathId = "TournamentTally";
   relpath = '';
 </script>
 
@@ -36,10 +36,10 @@
       <div id="header">
         <div id="menu">
   
-    <a href="_index.html">Index (C)</a> &raquo;
+    <a href="_index.html">Index (T)</a> &raquo;
     
     
-    <span class="title">CalorieCounter</span>
+    <span class="title">TournamentTally</span>
   
 </div>
 
@@ -59,7 +59,7 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><h1>Class: CalorieCounter
+      <div id="content"><h1>Class: TournamentTally
   
   
   
@@ -74,7 +74,7 @@
         <ul class="fullTree">
           <li>Object</li>
           
-            <li class="next">CalorieCounter</li>
+            <li class="next">TournamentTally</li>
           
         </ul>
         <a href="#" class="inheritanceTree">show all</a>
@@ -94,7 +94,7 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/calorie_counter.rb</dd>
+    <dd>lib/tournament_tally.rb</dd>
   </dl>
   
 </div>
@@ -102,7 +102,7 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>CalorieCounter is for <a href="https://adventofcode.com/2022/day/1" target="_parent" title="the first day of Advent of Code 2022">the first day of Advent of Code 2022</a>. The problem was to read a list of integers, determine which elf represented in that list had the most calories, and return the sum of their calories.</p>
+<p>TournamentTally is for <a href="https://adventofcode.com/2022/day/2" target="_parent" title="the 2nd day of Advent of Code 2022">the 2nd day of Advent of Code 2022</a>. The problem was to parse a list of pairs of characters to get a score for a paper, rocks, scissors tourney.</p>
 
 
   </div>
@@ -156,7 +156,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>String representing elves’ collection of snacks’ calorie counts.</p>
+<p>String representing the moves and outcomes of a paper, rock, scissors tourney.</p>
 </div></span>
   
 </li>
@@ -178,31 +178,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#highest_calorie_count-instance_method" title="#highest_calorie_count (instance method)">#<strong>highest_calorie_count</strong>  &#x21d2; Integer </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>The sum the snacks of the elf with the most calories.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(input)  &#x21d2; CalorieCounter </a>
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(input)  &#x21d2; TournamentTally </a>
     
 
     
@@ -219,7 +195,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>A new instance of CalorieCounter.</p>
+<p>A new instance of TournamentTally.</p>
 </div></span>
   
 </li>
@@ -228,7 +204,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#three_highest_calorie_counts_summed-instance_method" title="#three_highest_calorie_counts_summed (instance method)">#<strong>three_highest_calorie_counts_summed</strong>  &#x21d2; Integer </a>
+      <a href="#tally_game_points_part_one-instance_method" title="#tally_game_points_part_one (instance method)">#<strong>tally_game_points_part_one</strong>  &#x21d2; Integer </a>
     
 
     
@@ -243,7 +219,31 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>The sum the snacks of the top three elves with the most calories.</p>
+<p>The sum of all matches using moves from each line.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tally_game_points_part_two-instance_method" title="#tally_game_points_part_two (instance method)">#<strong>tally_game_points_part_two</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The sum of all matches using opponent move and game outcome from each line.</p>
 </div></span>
   
 </li>
@@ -258,7 +258,7 @@
     <div class="method_details first">
   <h3 class="signature first" id="initialize-instance_method">
   
-    #<strong>initialize</strong>(input)  &#x21d2; <tt><span class='object_link'><a href="" title="CalorieCounter (class)">CalorieCounter</a></span></tt> 
+    #<strong>initialize</strong>(input)  &#x21d2; <tt><span class='object_link'><a href="" title="TournamentTally (class)">TournamentTally</a></span></tt> 
   
 
   
@@ -267,7 +267,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns a new instance of CalorieCounter.</p>
+<p>Returns a new instance of TournamentTally.</p>
 
 
   </div>
@@ -287,7 +287,7 @@
       
         &mdash;
         <div class='inline'>
-<p>the day one problem input.</p>
+<p>the day two problem input.</p>
 </div>
       
     </li>
@@ -301,12 +301,12 @@
       <pre class="lines">
 
 
+12
 13
-14
-15</pre>
+14</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/calorie_counter.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'lib/tournament_tally.rb', line 12</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_input'>input</span><span class='rparen'>)</span>
   <span class='ivar'>@input</span> <span class='op'>=</span> <span class='id identifier rubyid_input'>input</span>
@@ -335,7 +335,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>String representing elves’ collection of snacks’ calorie counts.</p>
+<p>String representing the moves and outcomes of a paper, rock, scissors tourney.</p>
 
 
   </div>
@@ -354,7 +354,7 @@
       
         &mdash;
         <div class='inline'>
-<p>the input from the day one puzzle.</p>
+<p>the input from the day two puzzle.</p>
 </div>
       
     </li>
@@ -367,12 +367,12 @@
       <pre class="lines">
 
 
+9
 10
-11
-12</pre>
+11</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/calorie_counter.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'lib/tournament_tally.rb', line 9</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_input'>input</span>
   <span class='ivar'>@input</span>
@@ -390,9 +390,9 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="highest_calorie_count-instance_method">
+  <h3 class="signature first" id="tally_game_points_part_one-instance_method">
   
-    #<strong>highest_calorie_count</strong>  &#x21d2; <tt>Integer</tt> 
+    #<strong>tally_game_points_part_one</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
@@ -401,7 +401,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the sum the snacks of the elf with the most calories.</p>
+<p>Returns The sum of all matches using moves from each line.</p>
 
 
   </div>
@@ -420,7 +420,7 @@
       
         &mdash;
         <div class='inline'>
-<p>the sum the snacks of the elf with the most calories.</p>
+<p>The sum of all matches using moves from each line.</p>
 </div>
       
     </li>
@@ -433,15 +433,19 @@
       <pre class="lines">
 
 
+17
 18
 19
-20</pre>
+20
+21</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/calorie_counter.rb', line 18</span>
+      <pre class="code"><span class="info file"># File 'lib/tournament_tally.rb', line 17</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_highest_calorie_count'>highest_calorie_count</span>
-  <span class='id identifier rubyid_elves'>elves</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_elf'>elf</span><span class='op'>|</span> <span class='id identifier rubyid_elf'>elf</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_i</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sum'>sum</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_max'>max</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_tally_game_points_part_one'>tally_game_points_part_one</span>
+  <span class='id identifier rubyid_games'>games</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_game'>game</span><span class='op'>|</span>
+    <span class='id identifier rubyid_score'>score</span> <span class='id identifier rubyid_game'>game</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'> </span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:ord</span><span class='rparen'>)</span>
+  <span class='kw'>end</span><span class='period'>.</span><span class='id identifier rubyid_sum'>sum</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -449,9 +453,9 @@
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="three_highest_calorie_counts_summed-instance_method">
+  <h3 class="signature " id="tally_game_points_part_two-instance_method">
   
-    #<strong>three_highest_calorie_counts_summed</strong>  &#x21d2; <tt>Integer</tt> 
+    #<strong>tally_game_points_part_two</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
@@ -460,7 +464,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the sum the snacks of the top three elves with the most calories.</p>
+<p>Returns The sum of all matches using opponent move and game outcome from each line.</p>
 
 
   </div>
@@ -479,7 +483,7 @@
       
         &mdash;
         <div class='inline'>
-<p>the sum the snacks of the top three elves with the most calories.</p>
+<p>The sum of all matches using opponent move and game outcome from each line.</p>
 </div>
       
     </li>
@@ -492,15 +496,23 @@
       <pre class="lines">
 
 
-23
 24
-25</pre>
+25
+26
+27
+28
+29
+30</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/calorie_counter.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'lib/tournament_tally.rb', line 24</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_three_highest_calorie_counts_summed'>three_highest_calorie_counts_summed</span>
-  <span class='id identifier rubyid_elves'>elves</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_elf'>elf</span><span class='op'>|</span> <span class='id identifier rubyid_elf'>elf</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_i</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sum'>sum</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_max'>max</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sum'>sum</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_tally_game_points_part_two'>tally_game_points_part_two</span>
+  <span class='id identifier rubyid_games'>games</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_game'>game</span><span class='op'>|</span>
+    <span class='id identifier rubyid_moves'>moves</span> <span class='op'>=</span> <span class='id identifier rubyid_determine_moves'>determine_moves</span> <span class='id identifier rubyid_game'>game</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'> </span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_score'>score</span> <span class='id identifier rubyid_moves'>moves</span>
+  <span class='kw'>end</span><span class='period'>.</span><span class='id identifier rubyid_sum'>sum</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
