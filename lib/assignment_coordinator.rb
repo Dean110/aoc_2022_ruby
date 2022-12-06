@@ -34,7 +34,7 @@ class AssignmentCoordinator
       (start_and_end[0].to_i..start_and_end[1].to_i).to_a
     end
 
-    (assignment1 - assignment2).count < assignment1.count  || (assignment2 - assignment1).count < assignment2.count
+    (assignment1 - assignment2).count < assignment1.count || (assignment2 - assignment1).count < assignment2.count
   end
 
   def parse_assignment(assignment)
